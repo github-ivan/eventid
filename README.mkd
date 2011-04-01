@@ -6,7 +6,7 @@ eventid is a network service for generating unique ID numbers motivated by twitt
 
 Just for fun.
 
-## Building
+## Build binary
 
 libevent library is required to build binary.
 (Tested with libevent 1.4.13 and 2.0.10.)
