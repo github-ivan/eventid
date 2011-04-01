@@ -1,0 +1,40 @@
+eventid error codes
+-------------------
+
+
+Error code ranges
+-----------------
+-100 - -199 : parameter processing errors
+-200 - -299 : daemonize errors
+-300 - -399 : listener socket initialization errors
+-400 - -499 : service initialization errors
+-500 - -599 : request processing error
+
+
+Error codes
+-----------
+
+-100 : Help requested
+-101 : Invalid backlog_size value: %d.
+-102 : Invalid worker number value: %d, max value: %"PRIu64".
+-103 : Invalid remote port value: %d.
+-104 : Invalid remote address.
+
+-201 : Can't fork.
+-202 : Can't set new session id.
+-203 : Can't open logfile: %s.
+
+-301 : Can't create socket.
+-302 : Can't bind socket.
+-303 : Can't listen on socket.
+-304 : Can't set non-blocking on socket.
+
+-401 : event_init() error.
+-402 : evhttp_new() error.
+-403 : evhttp_accept_socket() error (%d).
+-404 : pthread_create() error (%d).
+-405 : Can't allocate memory for counters.
+
+-501 : nanosleep() error.
+-502 : evbuffer_new() error.
+
